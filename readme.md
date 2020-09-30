@@ -38,9 +38,9 @@ define main function
 
 def main():
 """Main function."""
-# Create an instance of QApplication
+#Create an instance of QApplication
 pycalc = QApplication(sys.argv)
-# Show the calculator's GUI
+#Show the calculator's GUI
 view = GUI()
 view.show()
 
@@ -55,7 +55,7 @@ if __name__ == "__main__":
 make error function
 
 ERROR_MSG = 'ERROR'
-# Create a Model to handle the calculator's operation
+#Create a Model to handle the calculator's operation
 def evaluateExpression(expression):
     """Evaluate an expression."""
     try:
