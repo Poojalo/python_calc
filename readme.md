@@ -112,3 +112,4 @@
     ```bash
     Controller(model=model, view=view)
     ```
+8. Update redeme.md file
