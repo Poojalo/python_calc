@@ -102,3 +102,13 @@
         self._view.display.returnPressed.connect(self._calculateResult)
         self._view.buttons['C'].clicked.connect(self._view.clearDisplay)
     ```
+
+7. Update main.py
+    #### at installtion stage
+    ```bash
+    from controller import Controller
+    ```
+    #### at main function stage
+    ```bash
+    Controller(model=model, view=view)
+    ```
