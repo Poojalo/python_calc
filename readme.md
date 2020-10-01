@@ -48,3 +48,22 @@
     if __name__ == "__main__":
         main()  
     ```
+
+4. created model.py 
+    ## make error function
+    ``` bash
+    ERROR_MSG = 'ERROR'
+    # Create a Model to handle the calculator's operation
+    def evaluateExpression(expression):
+        """Evaluate an expression."""
+        try:
+            result = str(eval(expression, {}, {})) 
+        except Exception:
+            result = ERROR_MSG  
+    return result
+    ```
+5. update  main.py with required code
+    #### add this to main.py
+    ```bash
+    model = evaluateExpression
+    ```
